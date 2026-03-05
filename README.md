@@ -3,7 +3,6 @@
 > **Softwarica College of IT & E-Commerce | In collaboration with Coventry University**
 > **Assignment Title: Investigation and Analysis of Computing Data for Data Management**
 > **Student: Nischal Rana**
-> **Due Date: 5th March 2026**
 
 ---
 
@@ -26,17 +25,11 @@ This repository contains all practical work, scripts, SQL files, and documentati
 
 The assignment covers three distinct areas of computer science:
 
-| Task | Topic | Marks |
-|------|-------|-------|
-| **Task 1** | Encoding Formats & Secure Data Exchange | 25% |
-| **Task 2** | Classroom Seating Arrangement — P vs NP, Brute Force, Heuristics | 25% |
-| **Task 3** | College Club Membership — Database Normalization & SQL | 40% |
-| **References** | Academic references | 5% |
-| **Format** | Presentation and grammar | 5% |
-
-All files in this repository support the written report (5000 words) submitted separately via Campus 4.0.
-
-> ⚠️ **Academic Integrity Notice:** This work is submitted in accordance with Softwarica College academic integrity policy. All sources are acknowledged in the written report.
+| Task | Topic |
+|------|-------|
+| **Task 1** | Encoding Formats & Secure Data Exchange |
+| **Task 2** | Classroom Seating Arrangement — P vs NP, Brute Force, Heuristics |
+| **Task 3** | College Club Membership — Database Normalization & SQL |
 
 ---
 
@@ -48,12 +41,9 @@ FOUNDATION-COURSEWORK/
 ├── README.md                          ← You are here — main overview of all tasks
 │
 ├── Task 1/
-│   ├── encoding_demo.py               ← Python script: Base64, ASCII, Hex, URL encoding demos
 │   └── README.md                      ← Task 1 full documentation
 │
 ├── Task 2/
-│   ├── brute_force.py                 ← Brute force seating arrangement solver
-│   ├── heuristic.py                   ← Heuristic smart approach solver
 │   └── README.md                      ← Task 2 full documentation
 │
 └── Task 3/
@@ -83,17 +73,6 @@ It also covers:
 - How encoding and TLS encryption work together in a complete data flow
 - How attackers misuse encoding to obfuscate malicious payloads (Base64 obfuscation, double URL encoding)
 - Mitigations and proposed improvements to encoding-based security strategies
-
-### Key File
-| File | Description |
-|------|-------------|
-| `Task 1/encoding_demo.py` | Runs 6 encoding sections with real-world examples, encode/decode output, strengths, weaknesses, and attack demonstrations |
-
-### Quick Run
-```bash
-cd "Task 1"
-python encoding_demo.py
-```
 
 📖 See `Task 1/README.md` for the full explanation of every section.
 
@@ -125,25 +104,6 @@ A teacher must seat students in a single row so that:
 - Uses a greedy strategy — place the most constrained student first
 - Dramatically faster than brute force
 - May not always find the perfect solution but finds a good-enough solution in reasonable time
-
-### Key Files
-| File | Description |
-|------|-------------|
-| `Task 2/brute_force.py` | Generates and checks all permutations — shows factorial time growth |
-| `Task 2/heuristic.py` | Greedy heuristic solver — fast, practical, scalable |
-
-### Quick Run
-```bash
-cd "Task 2"
-
-# Brute force (best for 6 or fewer students)
-python brute_force.py
-
-# Heuristic (scales to larger groups)
-python heuristic.py
-```
-
-> ⚠️ The brute force solver becomes very slow beyond 10 students. 10 students = 3,628,800 arrangements to check. This is intentional — it demonstrates exactly why brute force fails at scale.
 
 📖 See `Task 2/README.md` for the full explanation of P vs NP, time complexity analysis, and heuristic strategy.
 
